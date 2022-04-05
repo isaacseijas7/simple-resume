@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: sans-serif;
+  color: #333;
+}
+
+.contenedor {
+  max-width: 1024px;
+  width: 100%;
+  margin: 40px auto;
+  border: solid 1px #ddd;
+}
+
+/* header */
+
+header {
+  background-color: #94cfd5;
+  height: 280px;
+  display: flex;
+}
+
+header .foto img {
+  height: 280px;
+}
+
+header .contenido {
+  width: 100%;
+  padding: 15px 45px;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  color: white;
+}
+
+header .contenido .quien_soy {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.quien_soy h1 {
+  font-size: 65px;
+  margin-bottom: 10px;
+}
+
+.quien_soy h1 span {
+  color: #333;
+  display: block;
+  text-transform: uppercase;
+}
+
+.quien_soy p {
+  font-size: 18px;
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  justify-items: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.links ul {
+  width: 100%;
+  list-style: none;
+}
+
+.links ul li {
+  display: flex;
+  padding: 5px;
+  justify-content: flex-end;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.links ul li a span {
+  color: #333;
+}
+
+/* header */
+
+section.resumen {
+  padding: 15px 40px;
+}
+
+section.resumen article {
+  margin: 30px 0;
+}
+
+section.resumen h3 {
+  width: 100%;
+  border-bottom: solid 1px #333;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+section.resumen ul.no-margin {
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 15px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+}
+
+.col-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+.idioma {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 350px;
+}
+
+.progress {
+  height: 15px;
+  background-color: #ebebeb;
+  border-radius: 0;
+  box-shadow: none;
+  line-height: 0;
+  display: flex;
+  overflow: hidden;
+  justify-content: flex-start;
+  border-radius: 8px;
+  width: 250px;
+}
+
+.progress .progress-bar {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  background-color: #94cfd5;
+}
+
+.col-2 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.col-2 .pad {
+  padding: 10px 0;
+}
+
+ul.margin-l {
+  margin-left: 14px;
+  margin-top: 8px;
+}
+
+ul.intereses li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 3px 0;
+}
+
+ul.intereses li span {
+  margin-right: 15px;
+  font-size: 16px;
+}
